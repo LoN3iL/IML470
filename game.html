@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <Title>Games</Title>
+        <link rel="stylesheet" href="style_02.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+        </style>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="pictures/L-logo.png" rel="icon" id="favicon">
+    </head>
+    <body>
+        <header>
+            <a href="About.html">
+                <img src="pictures/L-logo.png" alt="Logo" width="50px" height="50px">
+            </a>
+            <ul class="nav">
+                <li><a href="#home" class="button">Home</a></li>
+                <li><a href="#about" class="button">About</a></li>
+                <li><a href="#games" class="button">Categories</a></li>
+                <li><a href="#contact" class="button">Contact</a></li>                   
+                <li><a href="About.html" class="button">Profile</a></li>
+            </ul>
+            <div class="action">
+                <div class="searchBx">
+                    <a href="#"><i class='bx bx-search-alt'></i></a>
+                    <input types="text" placeholder="Search Games">
+                </div>
+            </div>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+        </header>
+
+        <!-- Home Banner-->
+        <div class="banner" id="home">
+            <div class="bg">
+                <div class="content">
+                    <h2>Welcome!</h2>
+                    <p>Discover the best games across all genres, handpicked and rated by a passionate gamer.</p>
+                    <a href="About.html" class="btn">More about Me!</a>
+                </div>
+                <img src="pictures/Flying_bat_gif.png" width="100">
+                <img src="pictures/pixel_ghost_moving.png" width="300">
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="about animeX" id="about">
+            <div class="contentBx">
+                <h2>About this website</h2>
+                <p>A curated selection of top-tier games from various genres.
+                    As an avid gamers, I understand the excitement of finding that perfect game that matches your taste.
+                    I've created a platform where you can explore my game recommendations for each genre,
+                    complete with my personal ratings.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <!-- Games -->
+        <div class="games animeX" id="games">
+            <h2>Categories</h2>
+            <ul>
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="story">Story Based Games</li>
+                <li class="list" data-filter="rhythm">Rhythm Games</li>
+                <li class="list" data-filter="adventure">Adventure</li>
+                <li class="list" data-filter="horror">Horror/Thriller</li>
+            </ul>
+            <div class="cardBx">
+                <div class="card" data-item="horror">
+                    <img src="games_cover/Alice_Madness_Returns.png">
+                    <div class="content">
+                        <h4>Alice:  Madness Return</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/19680/Alice_Madness_Returns/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="rhythm">
+                    <img src="games_cover/Bang_Dream_Girls_Band_Party.png">
+                    <div class="content">
+                        <h4>Bang Dream: Girls Band</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.bushiroad.en.bangdreamgbp&hl=en&pli=1">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="rhythm">
+                    <img src="games_cover/Beat_Saber.png">
+                    <div class="content">
+                        <h4>Beat Saber</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/620980/Beat_Saber/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="adventure">
+                    <img src="games_cover/Dave_The_Diver.png">
+                    <div class="content">
+                        <h4>Dave The Diver</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="horror">
+                    <img src="games_cover/Detention.png">
+                    <div class="content">
+                        <h4>Detention</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/555220/Detention/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/Detroit_Become_Human.png">
+                    <div class="content">
+                        <h4>Detroit become Human</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="rhythm">
+                    <img src="games_cover/D4DJ_Groovy_Mix.png">
+                    <div class="content">
+                        <h4>D4DJ: Groovy Mix</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.bushiroad.en.d4dj&hl=en">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="adventure">
+                    <img src="games_cover/Fran_Bow.png">
+                    <div class="content">
+                        <h4>Fran Bow</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/362680/Fran_Bow/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="rhythm">
+                    <img src="games_cover/Hatsune_Miku_Colorful_Stage.png">
+                    <div class="content">
+                        <h4>Hatsune Miku: Colorful Stage</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.sega.ColorfulStage.en&hl=en">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/Heavy_Rain.png">
+                    <div class="content">
+                        <h4>Heavy Rain</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing</p>
+                            <a href="https://store.steampowered.com/app/960910/Heavy_Rain/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="horror">
+                    <img src="games_cover/Home_Sweet_Home.png">
+                    <div class="content">
+                        <h4>Home Sweet Home</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/617160/Home_Sweet_Home/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="adventure">
+                    <img src="games_cover/Lies_Of_P.png">
+                    <div class="content">
+                        <h4>Lies Of P</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/1627720/Lies_of_P/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/Life_is_strange_True_Colors.png">
+                    <div class="content">
+                        <h4>Life Is Strange: True Colors</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/936790/Life_is_Strange_True_Colors/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="adventure">
+                    <img src="games_cover/Little_Misfortune.png">
+                    <div class="content">
+                        <h4>Little Misfortune</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/714120/Little_Misfortune/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="rhythm">
+                    <img src="games_cover/Melatonin.png">
+                    <div class="content">
+                        <h4>Melatonin</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/1585220/Melatonin/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="horror">
+                    <img src="games_cover/My_Little_Nightmare_II.png">
+                    <div class="content">
+                        <h4>My Little Nightmares II</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/860510/Little_Nightmares_II/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/Persona_5_Royal.jpg">
+                    <div class="content">
+                        <h4>Persona 5 Royal</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Pricing</p>
+                            <a href="https://store.steampowered.com/app/1687950/Persona_5_Royal/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/Phoenix_Wright_Ace_Attorney.png">
+                    <div class="content">
+                        <h4>Phoenix Wright: Ace Attorney Trilogy</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/787480/Phoenix_Wright_Ace_Attorney_Trilogy/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/Red_Dead_Redemption_2.png">
+                    <div class="content">
+                        <h4>Red Dead Redemption 2</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/Resident_Evil_4.png">
+                    <div class="content">
+                        <h4>Resident Evil 4</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/2050650/Resident_Evil_4/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="adventure">
+                    <img src="games_cover/Sally_Face.jpg">
+                    <div class="content">
+                        <h4>Sally Face</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/541570/Sally_Face__Episode_One/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="adventure">
+                    <img src="games_cover/Stray.png">
+                    <div class="content">
+                        <h4>Stray</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/1332010/Stray/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/The_Last_of_Us.png">
+                    <div class="content">
+                        <h4>The Last Of Us</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/The_Quarry.png">
+                    <div class="content">
+                        <h4>The Quarry</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/1891950/The_Quarry__Full_Game/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-item="story">
+                    <img src="games_cover/Until_Dawn.png">
+                    <div class="content">
+                        <h4>Until Dawn</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Rating</p>
+                            <a href="https://store.steampowered.com/app/2172010/Until_Dawn/">More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact animeX" id="contact">
+            <img scr="#">
+            <div class="form">
+                <h1>Contact Me!</h1>
+                <div class="inputBx">
+                    <p>Enter Name</p>
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="inputBx">
+                    <p>Enter Email</p>
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="inputBx">
+                    <p>Message</p>
+                    <textarea placeholder="Type Here..."></textarea>
+                </div>
+                <div class="inputBx">
+                    <input type="submit" name="Submit">
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div class="info">
+                <a href="Games.html">
+                    <img src="pictures/L-logo.png" alt="Logo" width="50px" height="50px">
+                </a>
+                <p><i class='bx bx-copyright'></i> 2024 All Rights Reserved</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <script>
+            /* Sticky NavBar*/
+            window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY > 0);
+            });
+
+            /* Responsive NavBar */
+
+            function toggleMenu(){
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const nav = document.querySelector('.nav');
+                toggleMenu.classList.toggle('active')
+                nav.classList.toggle('active')
+            }
+
+            /* Scrolling Animation Effects */
+            window.addEventListener('scroll',function(){
+                var anime = document.querySelectorAll('.animeX');
+
+                for(var s = 0; s < anime.length; s++){
+                    var windowheight = window.innerHeight;
+                    var animetop = anime[s].getBoundingClientRect().top;
+                    var animepoint = 150;
+
+                    if(animetop < windowheight - animepoint){
+                        anime[s].classList.add('active');
+                    }
+                    else{
+                        anime[s].classList.remove('active');
+                    }
+                }
+            })
+
+            /* Filterable Cards */
+
+            let list = document.querySelectorAll('.list');
+            let card = document.querySelectorAll('.card');
+
+            for(let i = 0; i<list.length; i++){
+                list[i].addEventListener('click',function(){
+                    for(let j=0; j<list.length; j++){
+                        list[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+
+                    let dataFilter = this.getAttribute('data-filter');
+
+                    for( let k=0; k<card.length; k++)
+                    {
+                        card[k].classList.remove('active');
+                        card[k].classList.add('hide');
+
+                        if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                            card[k].classList.remove('hide');
+                            card[k].classList.add('active');
+                        }
+                    }
+                })
+            }
+        </script>
+    
+    </body>
+</html>
